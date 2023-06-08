@@ -8,7 +8,6 @@ import optparse as opp
 def get_args():
     parser = opp.OptionParser()
     parser.add_option("-t", "--target", dest="ip", help="ip address range you want to scan.\t\Ex: 192.168.0/24")
-    #parser.add_option("-t", "--timeo", dest="timeout", help="enter time out in seconds\t\Ex: -i 1")
     (options, arguments) = parser.parse_args()
     if not options.ip:
         parser.error("[-]Please specify IP Address to scan\t\tuse --help for more info")
